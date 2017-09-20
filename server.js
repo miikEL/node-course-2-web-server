@@ -41,6 +41,12 @@ app.get('/', (req, res) => {
     })
 });
 
+app.get('/git', (req, res) => {
+    res.render('gitpage.hbs', {
+
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page'
